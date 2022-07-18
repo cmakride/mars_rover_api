@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-MarsroverapiApplication<marsroverapi>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.chrismakrides.marsroverapi.MarsroverapiApplication",
+      "projectName": "marsroverapi",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
