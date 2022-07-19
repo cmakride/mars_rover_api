@@ -1,4 +1,4 @@
-package com.chrismakrides.marsroverapi;
+package com.chrismakrides.marsroverapi.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
