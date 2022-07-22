@@ -12,7 +12,7 @@
     <h2>Welcome to the Mars Rover API Web App</h2>
 
     <div th:each="index : ${#numbers.sequence(0,roverData.photos.size(),4)}" class="row" style="margin-bottom: 2em;">
-      <div class="col-sm">
+      <div class="col-sm" th:if="${index < roverData.photos.size()}">
         <img class="img-fluid" th:src="${roverData.photos[index].imgSrc}" alt="photo"/>
       </div>
       <div class="col-sm" th:if="${index+1 < roverData.photos.size()}">

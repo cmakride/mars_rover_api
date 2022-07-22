@@ -21,7 +21,7 @@ public class HomeController {
 
   @GetMapping("/")
   public String homeView(ModelMap model) {
-    MarsRoverApiResponse roverData = roverService.getRoverData();
+    MarsRoverApiResponse roverData = roverService.getRoverData("opportunity");
       //now we want to grab the body of the response, control 2 is the trick used in spring boot suite, will turn roverService.getRoverData() to assign the return type to a variable quickly to MarsRoverApiResponse roverData = roverService.getRoverData();
       // then what we do is take that data in the response and put it in the model, model is key value pairs
       model.put("roverData",roverData);
