@@ -21,7 +21,11 @@ const marsApiButtons = document.querySelectorAll("button[id*='marsApi']")
 
 marsApiButtons.forEach( button => button.addEventListener('click',function(){
   let buttonId = button.id
-  console.log(buttonId)
   let currentId = buttonId.split("marsApi")
-  console.log(typeof currentId[1])
+  const roverId = currentId[1]
+  let apiData = document.getElementById('marsApiRoverData')
+  apiData.value = roverId.toLowerCase()
+  console.log(apiData.value)
+  // so what should happen is when form is submitted we should get access to that data in the body of the post, which is in homecontroller PostMapping
+  document.getElementById('formRoverType').submit()
 }))
